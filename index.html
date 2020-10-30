@@ -8,5 +8,21 @@
   <title>Beep Boop Bot</title>
 </head>
 <body>
+  <div class="container">
+    <h1>Enter a number to help your Tiny Robo learn to count. Your Tiny Robo may get confused and replace certain numbers with robo-speak or with quotes from its favorite TV program, but it's all part of the learning process.</h1>
+    <div>
+      <form id="formOne">
+        <div class="form-group">
+          <label for="countTo">Count to:</label>
+          <input id="countTo" class="form-control" type="number" required/>
+        </div>
+        <button type="submit" class="btn">Count, Tiny Robo!</button>
+      </form>
+    </div>
+    <div id="roboSpeak">
+      <h1>Tiny Robo says:</h1>
+      <p id="roboSpeakText"></p>
+    </div>
+  </div>
 </body>
 </html>

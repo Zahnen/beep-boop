@@ -1,3 +1,4 @@
+// Business Logic
 function beepBoop(inputNumber) {
   let roboCount =[];
   for(let i = 0; i <= inputNumber; i++) {
@@ -5,7 +6,7 @@ function beepBoop(inputNumber) {
     let stringForm = i.toString();
 
     if (stringForm.includes("3")) {
-    roboCount.push("BZZBZZRKKKKK!");
+    roboCount.push("Won't you be my neighbor?");
   } else if (stringForm.includes("2")) {
     roboCount.push("Boop!");
   } else if (stringForm.includes("1")) {
@@ -14,18 +15,25 @@ function beepBoop(inputNumber) {
     roboCount.push(i);
   }
 }
-  return roboCount;
+  return roboCount
 };
+//UI Logic
 
+$(document).ready(function() {
+  $("#formOne").submit(function(event) {
+    event.preventDefault();
+    let userInput = parseInt($("input#countTo").val());
+    let roboSpeak = beepBoop(userInput);
 
-
-
-
-// let countTo = parseInt($("input#formOne").val());
-
+    $("#roboSpeak").show();
+    $("#roboSpeakText").append(roboSpeak.join(", "));
+  });
+});
 
 
 /*
+Describe: beepBoop Function
+
 Test: It will return a range of numbers that count from zero by one up to the user's input 
 Expect: (beepBoop(4).toEqual(0,1,2,3,4))
 
@@ -35,22 +43,13 @@ Expect:(beepBoop(1).toEqual("Beep")
 Test: "It will replace digits that include the number '2' with the string 'Boop!'"
 Expect:(beepBoop(2).toEqual("Boop")
 
-Test: "It will replace digits that include the number '3' with the string 'BZZBZZRKKKKK!'"
-Expect:(beepBoop(3).toEqual("BZZBZZRKKKKK")
+Test: "It will replace digits that include the number '3' with the string 'Won't you be my neighbor?'"
+Expect:(beepBoop(3).toEqual("Won't you be my neighbor?")
+*/
 
-Test:
-Expect:
-
-Test:
-Expect
-
-Test:
-Expect
-
-Test:
-Expect
-
-Test:
-Expect
-
+/*
+Scratchpad:
+    $("#results").show();
+    $("#roboSpeak").append("Test")
+    let countTo = parseInt($("input#formOne").val());
 */
