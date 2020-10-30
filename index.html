@@ -9,19 +9,45 @@
 </head>
 <body>
   <div class="container">
-    <h1>Enter a number to help your Tiny Robo learn to count. Your Tiny Robo may get confused and replace certain numbers with robo-speak or with quotes from its favorite TV program, but it's all part of the learning process.</h1>
-    <div>
-      <form id="formOne">
-        <div class="form-group">
-          <label for="countTo">Count to:</label>
-          <input id="countTo" class="form-control" type="number" required/>
-        </div>
-        <button type="submit" class="btn">Count, Tiny Robo!</button>
-      </form>
+    <div class="jumbotron">
+      <h1>Tiny Robo Counts</h1>
     </div>
-    <div id="roboSpeak">
-      <h1>Tiny Robo says:</h1>
-      <p id="roboSpeakText"></p>
+    <div class="row">
+      <div class="col-10">
+        <p>This is your Tiny Robo. Your Tiny Robo is young and still has much to learn - your Tiny Robo hopes that you can help it. Today's lesson should help your Tiny Robo solidify its ability to count.</p>
+      </div>
+      <div class="col-2">
+        <img src="img/tinyRobo.png" alt="A cartoon of a tiny robot">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2">
+        <img src="img/tinyRoboSweater.png" alt="A cartoon of a tiny robot">
+      </div>
+      <div class="col-10">
+        <p>Your Tiny Robo enjoys watching television programs while you are not actively teaching it. Your Tiny Robo's favorite show is <em>Mister Rogers' Neighborhood</em>.</p>
+        <p>Sometimes your Tiny Robo confuses lines from its favorite show with other words/characters in the English language. Sometimes it confuses words/characters with plain old Robo Speak (beeps and boops). Do not be mad if your Tiny Robo makes mistakes.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Enter a number below to help your Tiny Robo learn to count:</h1>
+    <div class="row">
+      <div class="col-8">
+
+                              <form id="formOne">
+                                <div class="form-group">
+                                  <label for="countTo">Count to:</label>
+                                  <input id="countTo" class="form-control" type="number" required/>
+                                </div>
+                                <button type="submit" class="btn btn-outline-primary">Count, Tiny Robo!</button>
+                              </form>
+      </div>
+      <div class="col-4" id="roboSpeak">
+                              <h3>Tiny Robo says:</h3>
+                              <p id="roboSpeakText"></p>
+      </div>
     </div>
   </div>
 </body>
