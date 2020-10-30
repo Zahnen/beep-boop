@@ -1,15 +1,15 @@
 function beepBoop(inputNumber) {
   let roboCount =[];
   for(let i = 0; i <= inputNumber; i++) {
+    
+    let stringForm = i.toString();
 
-    let string = inputNumber.toString();
-
-    if (i == 1) {
-    roboCount.push("Beep!");
-  } else if (i == 2) {
-    roboCount.push("Boop!");
-  } else if (string.includes("3")) {
+    if (stringForm.includes("3")) {
     roboCount.push("BZZBZZRKKKKK!");
+  } else if (stringForm.includes("2")) {
+    roboCount.push("Boop!");
+  } else if (stringForm.includes("1")) {
+    roboCount.push("Beep!");
   } else {
     roboCount.push(i);
   }
