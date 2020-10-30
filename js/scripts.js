@@ -1,11 +1,14 @@
 function beepBoop(inputNumber) {
   let roboCount =[];
   for(let i = 0; i <= inputNumber; i++) {
+
+    let string = inputNumber.toString();
+
     if (i == 1) {
     roboCount.push("Beep!");
   } else if (i == 2) {
     roboCount.push("Boop!");
-  } else if (i == 3) {
+  } else if (string.includes("3")) {
     roboCount.push("BZZBZZRKKKKK!");
   } else {
     roboCount.push(i);
