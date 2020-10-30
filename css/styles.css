@@ -1,0 +1,19 @@
+#roboSpeak, #roboSpeakImage {
+  display: none;
+}
+body {
+  background-color: #F4F3EE;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.jumbotron {
+  margin-top: 1%;
+}
+.btn-outline-primary {
+  background-color: #009687;
+  color: #3f51b5;
+  border: #3f51b5;
+  font-weight: 600;
+}
+h2 {
+  text-align: center;
+}
