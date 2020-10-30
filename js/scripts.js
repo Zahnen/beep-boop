@@ -3,8 +3,12 @@ function beepBoop(inputNumber) {
   let roboCount =[];
 
   for (let i = 0; i <= countTo; i++) {
+    if (i = 1))
+    roboCount.push("Beep!");
+  } else () {
     roboCount.push(i);
   }
+
   return roboCount;
 }
 
