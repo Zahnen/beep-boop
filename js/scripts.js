@@ -5,6 +5,8 @@ function beepBoop(inputNumber) {
     roboCount.push("Beep!");
   } else if (i == 2) {
     roboCount.push("Boop!");
+  } else if (i == 3) {
+    roboCount.push("BZZBZZRKKKKK!");
   } else {
     roboCount.push(i);
   }
@@ -30,7 +32,7 @@ Expect:(beepBoop(1).toEqual("Beep")
 Test: "It will replace digits that include the number '2' with the string 'Boop!'"
 Expect:(beepBoop(2).toEqual("Boop")
 
-Test: "It will replace digits that include the number '3' with the string 'BZZBZZRKKKKK'"
+Test: "It will replace digits that include the number '3' with the string 'BZZBZZRKKKKK!'"
 Expect:(beepBoop(3).toEqual("BZZBZZRKKKKK")
 
 Test:
