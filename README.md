@@ -37,6 +37,18 @@ _This webpage was created as my independent project for my third week at Epicodu
 * __
 * __
 
+## Specs
+
+| Test | Input | Output |
+| :----------- | :----------------------| :----------- |
+| Number Replacement |||
+| It will return a range of numbers that count from zero by one up to the user's input | 4 | '0,1,2,3,4' |
+| It will replace digits that include the number '1' with the string 'Beep!' | 1 | 'Beep!' |
+| It will replace digits that include the number '2' with the string 'Boop!' | 2 | 'Boop!' |
+| It will replace digits that include the number '3' with the string 'Won't you be my neighbor?' | 3 | 'Won't you be my neighbor?' |
+| It will follow replacement rules according to the highest (of 1, 2, or 3) number present in the digit | 32 | 'Won't you be my neighbor?' |
+
+
 ## Known Bugs
 
 _There are no known bugs at this time._
@@ -62,6 +74,5 @@ _This webpage required use of the following programs/languages/libraries to crea
 
 *Licensed under MIT*
 
-*Vector icons provided via Icons8's library, which can be found at https://icons8.com/*
 
 Copyright (c) 2020 **_Zahnen Garner_**
