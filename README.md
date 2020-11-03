@@ -39,14 +39,27 @@ _This webpage was created as my independent project for my third week at Epicodu
 
 ## Specs
 
-| Test | Input | Output |
-| :----------- | :----------------------| :----------- |
-| Number Replacement |||
-| It will return a range of numbers that count from zero by one up to the user's input | 4 | '0,1,2,3,4' |
-| It will replace digits that include the number '1' with the string 'Beep!' | 1 | 'Beep!' |
-| It will replace digits that include the number '2' with the string 'Boop!' | 2 | 'Boop!' |
-| It will replace digits that include the number '3' with the string 'Won't you be my neighbor?' | 3 | 'Won't you be my neighbor?' |
-| It will follow replacement rules according to the highest (of 1, 2, or 3) number present in the digit | 32 | 'Won't you be my neighbor?' |
+**Describe: beepBoop Function**
+
+_Test: "It will return a range of numbers that count from zero by one up to the user's input"_
+
+_Expect: (beepBoop(4).toEqual(0,1,2,3,4))_
+
+_Test: "It will replace digits that include the number '1' with the string 'Beep!'"_
+
+_Expect:(beepBoop(2).toEqual("Beep!")_
+
+_Test: "It will replace digits that include the number '2' with the string 'Boop!'"_
+
+_Expect:(beepBoop(2).toEqual("Boop!")_
+
+_Test: "It will replace digits that include the number '3' with the string 'Won't you be my neighbor?'"_
+
+_Expect:(beepBoop(3).toEqual("Won't you be my neighbor?")_
+
+_Test: "It will follow replacement rules with the '3' rule being the most specific and the '1' rule being the least specific"_
+
+_Expect: (beepboop(321).toEqual("Won't you be my neighbor?")_
 
 
 ## Known Bugs
